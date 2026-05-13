@@ -1,0 +1,30 @@
+name: scp_breux_ops
+description: Local operations workspace for work orders, payroll reports, reservations, and incidents.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - docs/icon.png
+    - docs/featured.png
+
+flutter_launcher_icons:
+  android: true
+  image_path: docs/icon.png
+  adaptive_icon_background: "#071424"
+  adaptive_icon_foreground: docs/icon.png
+  min_sdk_android: 23

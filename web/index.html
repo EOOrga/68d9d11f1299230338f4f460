@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCP BREUX F ET THEPAULT C</title>
+  <meta name="description" content="Local Android operations app for work orders, payroll reports, reservations, and incident reporting.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --navy: #071424;
+      --blue: #10253a;
+      --gold: #d6a84d;
+      --paper: #fffbf2;
+      --silver: #d8dde2;
+      --ink: #17202a;
+      --green: #19745f;
+      --line: rgba(7, 20, 36, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      align-items: end;
+      padding: 24px;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(7, 20, 36, 0.94), rgba(7, 20, 36, 0.72), rgba(7, 20, 36, 0.18)),
+        url("featured.png") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      width: min(1040px, 100%);
+      margin: 0 auto;
+      padding-bottom: 6vh;
+    }
+
+    .mark {
+      width: 72px;
+      height: 72px;
+      border-radius: 8px;
+      border: 1px solid rgba(214, 168, 77, 0.6);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 0.95;
+      font-weight: 850;
+    }
+
+    .lede {
+      max-width: 620px;
+      margin: 20px 0 30px;
+      color: var(--silver);
+      font-size: clamp(18px, 3vw, 22px);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 58px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.05;
+    }
+
+    .section-lede {
+      max-width: 720px;
+      margin: 0 0 28px;
+      color: #4d5965;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      min-height: 190px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+    }
+
+    .card strong {
+      display: block;
+      color: var(--navy);
+      font-size: 18px;
+      margin: 12px 0 8px;
+    }
+
+    .icon {
+      display: inline-grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: 8px;
+      background: rgba(214, 168, 77, 0.18);
+      color: var(--navy);
+      font-weight: 900;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .panel {
+      border-radius: 8px;
+      padding: 24px;
+      color: white;
+      background: var(--blue);
+    }
+
+    .rows {
+      display: grid;
+      gap: 12px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(216, 221, 226, 0.18);
+    }
+
+    .row:last-child {
+      border-bottom: 0;
+    }
+
+    footer {
+      padding: 32px 0 46px;
+      color: #59636f;
+    }
+
+    @media (max-width: 820px) {
+      .hero {
+        min-height: 84vh;
+        padding: 18px;
+        background:
+          linear-gradient(180deg, rgba(7, 20, 36, 0.92), rgba(7, 20, 36, 0.72), rgba(7, 20, 36, 0.28)),
+          url("featured.png") center / cover no-repeat;
+      }
+
+      .grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="mark" src="favicon.png" alt="">
+      <h1>SCP BREUX F ET THEPAULT C</h1>
+      <p class="lede">A focused Android workspace for work orders, payroll reports, reservation management, and incident reporting.</p>
+      <a class="button" href="mailto:support@scpbreuxfthepaultc.app">Contact support</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Daily operations in one place</h2>
+      <p class="section-lede">The app helps teams capture the records that keep the business day moving, then review status, owners, priority, and due dates from a compact mobile workspace.</p>
+      <div class="grid">
+        <article class="card">
+          <span class="icon">W</span>
+          <strong>Work orders</strong>
+          <p>Create and follow service tasks with owners, notes, priorities, and due dates.</p>
+        </article>
+        <article class="card">
+          <span class="icon">P</span>
+          <strong>Payroll reports</strong>
+          <p>Track report status and values for local payroll follow-up.</p>
+        </article>
+        <article class="card">
+          <span class="icon">R</span>
+          <strong>Reservations</strong>
+          <p>Manage booking requests, confirmed reservations, party size, and handoff notes.</p>
+        </article>
+        <article class="card">
+          <span class="icon">I</span>
+          <strong>Incidents</strong>
+          <p>Record urgent issues with clear status and accountability until resolved.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split">
+      <div>
+        <h2>Private by design</h2>
+        <p class="section-lede">Records stay in local app storage. There is no account registration, no cloud sync, no analytics collection, and no Android permission declaration.</p>
+      </div>
+      <div class="panel">
+        <div class="rows">
+          <div class="row"><span>Storage</span><strong>On device</strong></div>
+          <div class="row"><span>Account</span><strong>Not required</strong></div>
+          <div class="row"><span>Permissions</span><strong>None declared</strong></div>
+          <div class="row"><span>Category</span><strong>Business</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <strong>SCP BREUX F ET THEPAULT C</strong><br>
+      support@scpbreuxfthepaultc.app
+    </footer>
+  </main>
+</body>
+</html>
