@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.taziggg100.scpbreuxfthepaultc": {
+      "title": "SCP BREUX F ET THEPAULT C",
+      "short_description": "Track work orders, payroll reports, reservations, and incidents locally.",
+      "full_description": "SCP BREUX F ET THEPAULT C helps daily teams keep operational records organized on one Android device. Create work orders, review payroll report status, manage reservations, and document incidents without an account or cloud sync.\n\nThe app is designed for focused business follow-up: each record includes an owner, status, priority, due date, and notes so teams can see what needs attention next.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:26:01.262414+00:00"
+    }
+  }
+}
