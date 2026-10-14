@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'operations_data.dart';
 
-const _navy = Color(0xFF071424);
-const _deepBlue = Color(0xFF10253A);
-const _gold = Color(0xFFD6A84D);
+const _navy = Color(0xFFFF1F88);
+const _deepBlue = Color(0xFFFF961F);
+const _gold = Color(0xFFFF261F);
 const _silver = Color(0xFFD8DDE2);
 const _paper = Color(0xFFFFFBF2);
 const _success = Color(0xFF19745F);
@@ -299,7 +299,7 @@ class DashboardPage extends StatelessWidget {
         _MetricsGrid(controller: controller),
         const SizedBox(height: 18),
         _SectionHeader(
-          title: 'Today and next actions',
+          title: 'SCP BREUX F ET THEPAULT C',
           action: TextButton(
             onPressed: () => onOpenType(OperationType.workOrder),
             child: const Text('Open work'),
