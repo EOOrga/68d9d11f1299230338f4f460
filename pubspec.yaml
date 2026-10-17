@@ -1,4 +1,4 @@
-name: scp_breux_ops
+name: scpbreuxfthepaultc
 description: Local operations workspace for work orders, payroll reports, reservations, and incidents.
 publish_to: 'none'
 version: 1.0.0+1
@@ -25,6 +25,6 @@ flutter:
 flutter_launcher_icons:
   android: true
   image_path: docs/icon.png
-  adaptive_icon_background: "#071424"
+  adaptive_icon_background: "#8BC34A"
   adaptive_icon_foreground: docs/icon.png
   min_sdk_android: 23
