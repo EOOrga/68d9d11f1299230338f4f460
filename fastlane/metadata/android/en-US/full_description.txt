@@ -1,0 +1,3 @@
+SCP BREUX F ET THEPAULT C helps daily teams keep operational records organized on one Android device. Create work orders, review payroll report status, manage reservations, and document incidents without an account or cloud sync.
+
+The app is designed for focused business follow-up: each record includes an owner, status, priority, due date, and notes so teams can see what needs attention next.
